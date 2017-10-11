@@ -39,7 +39,18 @@ task unpackTextGrid(type: Copy) {
 }
 
 convertTextGridToXLab {
+    dependsOn unpackTextGrid
     convertTextGridToXLab.tgDir = file("$buildDir/TextGrid")
     convertTextGridToXLab.tiername = "MAU"
+    convertTextGridToXLab.labelMapping = [
+            '<p:>': '_',
+            'i:'  : 'i',
+            'O:'  : 'O',
+            '3`'  : 'r=',
+            'Q'   : 'A',
+            'R'   : 'r',
+            'u:'  : 'u',
+            'aI'  : 'AI',
+            'eI'  : 'EI']
 }
 
