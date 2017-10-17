@@ -51,6 +51,10 @@ convertTextGridToXLab {
             'R'   : 'r',
             'u:'  : 'u',
             'aI'  : 'AI',
-            'eI'  : 'EI']
+            'eI'  : 'EI',
+            'l='  : 'l',
+            'h\\' : 'h',
+            '6'   : 'r=',
+            '4'   : 'r',
+            '?'   : '_']
 }
-
